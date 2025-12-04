@@ -28,11 +28,3 @@ A **dynamic form builder** built with **Next.js** that allows you to create, edi
 - **No external libraries** required
 
 ---
-
-## Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/hasinsadaf/form_builder.git
-cd form_builder

@@ -59,12 +59,12 @@ export default function Page() {
     <div className="p-8 grid grid-cols-2 gap-10">
 
       <div>
-        <h1 className="text-2xl font-bold mb-4">Form Builder</h1>
+        <h1 className="text-4xl text-emerald-100 font-bold mb-4">Form Builder</h1>
 
         <div className="flex gap-3 mb-4">
-          <button onClick={() => addField("text")} className="bg-gray-400 w-30 text-black rounded-2xl">Add Text</button>
-          <button onClick={() => addField("email")} className="bg-gray-400 w-30 text-black rounded-2xl">Add Email</button>
-          <button onClick={() => addField("number")} className="bg-gray-400 w-30 text-black rounded-2xl">Add Number</button>
+          <button onClick={() => addField("text")} className="bg-emerald-300 w-30 text-black rounded-2xl">Add Text</button>
+          <button onClick={() => addField("email")} className="bg-emerald-300 w-30 text-black rounded-2xl">Add Email</button>
+          <button onClick={() => addField("number")} className="bg-emerald-300 w-30 text-black rounded-2xl">Add Number</button>
         </div>
 
         {fields.map((field, index) => (
@@ -73,7 +73,7 @@ export default function Page() {
             draggable
             onDragStart={() => handleDragStart(index)}
             onDragOver={() => handleDragOver(index)}
-            className="border p-3 rounded-2xl mb-3 bg-gray-400 text-black cursor-move"
+            className="border p-3 rounded-2xl mb-3 bg-emerald-100 text-black cursor-move"
           >
             <div className="flex justify-between">
               <strong>{field.label}</strong>
@@ -89,7 +89,7 @@ export default function Page() {
         ))}
 
         {editField && (
-          <div className="fixed right-5 top-5 bg-gray-400 p-5 border rounded shadow w-64">
+          <div className="fixed right-5 top-5 bg-blue-200 p-5 border rounded shadow w-64">
             <h2 className="font-bold text-black mb-3">Edit Field</h2>
 
             <label className="block text-black mb-1">Label:</label>
@@ -110,7 +110,7 @@ export default function Page() {
               }
             />
 
-            <label className="flex items-center gap-2 mb-3">
+            <label className="flex text-black items-center gap-2 mb-3">
               <input
                 type="checkbox"
                 checked={editField.required}
@@ -130,7 +130,7 @@ export default function Page() {
       </div>
 
       <div>
-        <h1 className="text-2xl font-bold mb-4">Live Preview</h1>
+        <h1 className="text-4xl text-sky-100 font-bold mb-4">Live Preview</h1>
 
         <form className="space-y-4">
           {fields.map((field) => (

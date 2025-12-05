@@ -1,6 +1,6 @@
 # Professional Form Builder
 
-A modern, drag-and-drop form builder built with React and Next.js. Create beautiful forms with ease using an intuitive interface and live preview.
+A modern, drag-and-drop form builder built with React, TailwindCSS and Next.js. Create beautiful forms with ease using an intuitive interface and live preview.
 
 ![Form Builder Demo](./screenshots/live-preview.png)
 
